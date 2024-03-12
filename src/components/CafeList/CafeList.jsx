@@ -4,9 +4,8 @@ import "./CafeList.css"
 
 
 function CafeList({cafes}) {
-
   return (
-    <div>
+    <div className='cafe-list'>
       { cafes.map( cafe => <Cafe cafe={cafe} key={cafe.title} />)}
     </div>
   );

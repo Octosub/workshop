@@ -1,17 +1,14 @@
 // Backend API endpoint: https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes
 import "./App.css";
-
+import React from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import CafeList from "./components/CafeList/CafeList";
-import React from "react";
 
 export default function App() {
-
   //React hooks for states
   const [cafes, setCafes] = React.useState([]);
   //In the line above we create 1. cafes, which is the state AND 2. setCafes is a function that changes the state with
-
 
   //React hooks Effect
   React.useEffect(() => {
